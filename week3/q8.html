@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border: 2px solid black;
+            width: 250px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+        }
+        input:focus {
+            border: 2px solid blue;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: gray;
+            color: white;
+        }
+        button:hover {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label>Username</label>
+        <input type="text">
+        <label>Password</label>
+        <input type="password">
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>

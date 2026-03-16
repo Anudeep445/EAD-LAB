@@ -1,0 +1,37 @@
+body {
+    font-family: Arial;
+    background-color: #f0f8ff;
+}
+h2 {
+    text-align: center;
+}
+form {
+    width: 300px;
+    margin: auto;
+    margin-top: 40px;
+}
+fieldset {
+    border: 2px solid blue;
+    padding: 20px;
+    border-radius: 5px;
+}
+legend {
+    font-weight: bold;
+    color: darkblue;
+}
+input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+button {
+    width: 100%;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: darkblue;
+}

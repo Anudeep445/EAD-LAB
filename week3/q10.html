@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My College Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Content Section */
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .box {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            border: 2px solid gray;
+            background-color: lightgray;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>CHAITANYA BHARATHI INSTITUTE OF TECHNOLOGY</h2>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Departments</a>
+            <a href="#">Admissions</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="box">
+            <h3>About Us</h3>
+            <p>Vision : “To be the center of excellence in technical education and research”.
+                Mission : “To address the emerging needs through quality technical education and advanced research”.</p>
+        </div>
+
+        <div class="box">
+            <h3>Our Courses</h3>
+            <p>We offer Engineering, Degree, MBA, and many other professional courses.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2026 CBIT. All Rights Reserved.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: darkblue;
+}
+p {
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+}
+ol {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+}
+img {
+    margin-top: 20px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 10px gray;
+}
+a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: red;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web Page Layout</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .header {
+            background-color: darkblue;
+            height: 100px;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+        }
+        .main {
+            display: flex;              
+            height: 400px;
+        }
+        .sidebar {
+            background-color: red;
+            width: 25%;
+            text-align: center;
+            color: white;
+            line-height: 400px;
+        }
+         .content {
+            background-color: lightblue;
+            width: 75%;
+            text-align: center;
+            line-height: 400px;
+        }
+        .footer {
+            background-color: green;
+            height: 100px;
+            text-align: center;
+            color: white;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Header
+    </div>
+    <div class="main">
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Main Content</div>
+    </div>
+    <div class="footer">Footer</div>
+</body>
+</html>

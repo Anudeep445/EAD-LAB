@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login Page with Attempt Tracker</title>
+    <style>
+        h2 {
+            color : black;
+            text-align: center;
+        }
+        .login-box {
+            background-color: yellow;
+            padding : 20px;
+            width : 400px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+        #attemptMsg{
+            color: red;
+        }
+        #userError{
+            color: red;
+        }
+        #passError{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        
+            <input type="text" id="username" placeholder="enter username">
+            <div id="userError" class="error"></div>
+        
+        
+            <input type="password" id="password" placeholder="enter password">
+            <div id="passError" class="error"></div>
+        
+            <button id="loginBtn">Login</button>
+            <div id="attemptMsg" class="error"></div>
+
+    </div>
+    <script>
+        function loginTracker() {
+        let attempts = 0;
+
+        return function() {
+            attempts++;
+            return attempts;
+        }
+    }
+
+    const countAttempts = loginTracker();
+
+    const loginBtn = document.getElementById("loginBtn");
+
+    loginBtn.addEventListener("click", function() {
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        const userError = document.getElementById("userError");
+        const passError = document.getElementById("passError");
+        const attemptMsg = document.getElementById("attemptMsg");
+
+        // Clear previous errors
+        userError.innerText = "";
+        passError.innerText = "";
+        attemptMsg.innerText = "";
+
+        let isValid = true;
+
+        // ✅ Username validation
+        if (username === "") {
+            userError.innerText = "Username cannot be empty";
+            isValid = false;
+        }
+
+        // ✅ Password validation
+        if (password.length < 6) {
+            passError.innerText = "Password must be at least 6 characters";
+            isValid = false;
+        }
+
+        if (!isValid) {
+            let totalAttempts = countAttempts();
+
+            if (totalAttempts >= 3) {
+                attemptMsg.innerText = "Too many attempts. Login disabled.";
+                loginBtn.disabled = true;
+            } else {
+                attemptMsg.innerText = 
+                    "Wrong attempt! Remaining attempts: " + (3 - totalAttempts);
+            }
+        } else {
+            alert("Login Successful!");
+        }
+
+    });
+    </script>
+</body>
+</html>

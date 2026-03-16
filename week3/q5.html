@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .box01 {
+                background-color: black;
+            }
+            .box02 {
+                background-color: blue;
+            }
+            .box03 {
+                background-color: yellow;
+            }
+            .box01, .box02, .box03 {
+                display: inline-block;
+            }
+            .con1 {
+                background-color: skyblue;
+                align-items: center;
+                position: static;
+            }
+            .con2 {
+                background-color: yellowgreen;
+                align-items: center;
+                position: relative;
+                left: 30px;
+            }
+            .con3 {
+                background-color: greenyellow;
+                align-items: center;
+                position: absolute;
+                bottom: 100px;
+                right: 10px;
+            }
+            .con4 {
+                background-color: pink;
+                align-items: center;
+                position: fixed;
+                bottom: 0;
+                right: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="con1">
+            <div class="box01" style="height: 100px; width: 100px;"></div>
+            <div class="box02" style="height: 100px; width: 100px;"></div>
+            <div class="box03" style="height: 100px; width: 100px;"></div>
+        </div>
+        <div class="con2">
+            <div class="box01" style="height: 100px; width: 100px;"></div>
+            <div class="box02" style="height: 100px; width: 100px;"></div>
+            <div class="box03" style="height: 100px; width: 100px;"></div>
+        </div>
+        <div class="con3">
+            <div class="box01" style="height: 100px; width: 100px;"></div>
+            <div class="box02" style="height: 100px; width: 100px;"></div>
+            <div class="box03" style="height: 100px; width: 100px;"></div>
+        </div>
+        <div class="con4">
+            <div class="box01" style="height: 100px; width: 100px;"></div>
+            <div class="box02" style="height: 100px; width: 100px;"></div>
+            <div class="box03" style="height: 100px; width: 100px;"></div>
+        </div>
+    </body>
+</html>

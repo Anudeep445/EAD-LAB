@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bootstrap Demo</title>
+
+<!-- Bootstrap CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand">MyWebsite</a>
+
+<ul class="navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="#">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+
+</div>
+</nav>
+
+
+<br><br><br>
+
+
+<!-- Container -->
+<div class="container mt-4">
+
+<h1 class="text-center">Bootstrap Demo Page</h1>
+
+
+<!-- Alert -->
+<div class="alert alert-success">
+Welcome! This is a Bootstrap Alert
+</div>
+
+
+<!-- Grid System -->
+<div class="row">
+
+<div class="col-md-4 bg-primary text-white p-3">
+Column 1
+</div>
+
+<div class="col-md-4 bg-success text-white p-3">
+Column 2
+</div>
+
+<div class="col-md-4 bg-warning text-dark p-3">
+Column 3
+</div>
+
+</div>
+
+
+<br>
+
+
+<!-- Buttons -->
+<h3>Buttons</h3>
+
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-danger">Danger</button>
+
+
+<br><br>
+
+
+<!-- Button Group -->
+<div class="btn-group">
+<button class="btn btn-primary">Left</button>
+<button class="btn btn-primary">Middle</button>
+<button class="btn btn-primary">Right</button>
+</div>
+
+
+<br><br>
+
+
+<!-- Image -->
+<h3>Responsive Image</h3>
+
+<img src="https://via.placeholder.com/300"
+class="img-fluid float-start">
+
+
+<br><br><br><br>
+
+
+<!-- Table -->
+<h3>Bootstrap Table</h3>
+
+<table class="table table-striped table-bordered table-hover">
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Course</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Anudeep</td>
+<td>B.Tech</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Rahul</td>
+<td>B.Tech</td>
+</tr>
+
+</table>
+
+
+<br>
+
+
+<!-- Progress Bar -->
+<h3>Progress Bar</h3>
+
+<div class="progress">
+
+<div class="progress-bar progress-bar-striped bg-success"
+style="width:70%">
+70%
+</div>
+
+</div>
+
+
+<br>
+
+
+<!-- Tabs -->
+<ul class="nav nav-tabs">
+
+<li class="nav-item">
+<a class="nav-link active">Tab1</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Tab2</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Tab3</a>
+</li>
+
+</ul>
+
+
+<br>
+
+
+<!-- Pills -->
+<ul class="nav nav-pills">
+
+<li class="nav-item">
+<a class="nav-link active">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Profile</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link">Messages</a>
+</li>
+
+</ul>
+
+
+<br>
+
+
+<!-- Form -->
+<h3>Contact Form</h3>
+
+<form class="needs-validation">
+
+<div class="mb-3">
+
+<label>Name</label>
+
+<input type="text"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+
+<label>Email</label>
+
+<input type="email"
+class="form-control"
+required>
+
+</div>
+
+
+<div class="mb-3">
+
+<label>Message</label>
+
+<textarea class="form-control"></textarea>
+
+</div>
+
+<button class="btn btn-primary">
+Submit
+</button>
+
+</form>
+
+
+<br>
+
+
+<!-- Modal Button -->
+
+<button class="btn btn-info"
+data-bs-toggle="modal"
+data-bs-target="#myModal">
+
+Open Modal
+
+</button>
+
+
+<!-- Modal -->
+
+<div class="modal fade" id="myModal">
+
+<div class="modal-dialog">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">Modal Title</h5>
+
+<button class="btn-close"
+data-bs-dismiss="modal"></button>
+
+</div>
+
+<div class="modal-body">
+
+This is a Bootstrap modal popup.
+
+</div>
+
+<div class="modal-footer">
+
+<button class="btn btn-danger"
+data-bs-dismiss="modal">
+
+Close
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
